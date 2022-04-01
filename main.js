@@ -31,4 +31,7 @@ while (contador < listaDeTeclas.length) {
 
  ela nos retorna uma lista de classes, então podemos numerar a .classlist[0] por ex: para acessar a primeira classe da lista.
  
+ Class.list:
+ 
+ classList é uma propriedade somente leitura que retorna uma coleção DOMTokenList (en-US) ativa dos atributos de classe do elemento. Usar classList é uma alternativa conveniente para acessar a lista de classes de um elemento como uma seqüência delimitada por espaço através de element. className
  */
