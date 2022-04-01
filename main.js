@@ -11,6 +11,11 @@ let contador = 0;
 
 while (contador < listaDeTeclas.length) {
 
+    
+    const instrumento = listaDeTeclas[contador].classList[1];
+
+    console.log(instrumento)
+
     listaDeTeclas[contador].onclick = function () {
         tocaSom('#som_tecla_pom')
     };
@@ -20,21 +25,10 @@ while (contador < listaDeTeclas.length) {
     console.log(contador);
 }
 
-/* Primeiro nós criamos uma função "tocaSom "
-Dentro das () descrevemos o que vamos pegar de dentro do nosso código HTML, apenas escrevemos o que é para identificar.
-Após isso, abrimos as chaves {} e colocamos dentro a nossa função que é :
+/* no navegador, acessamos o console e digitamos:
 
-        document.querySelector(idElementoAudio).play();
+ listaDeTeclas[0].classlist[]
 
-        document : acessar HTML
-        querySelector() : Seleciona o que vamos selecionar
-        .play() : o que vai fazer ?
-
-
-após isso criamos uma const que recebeu listaDeTeclas.
-Então usamos o querySelectorAll('.tecla') para pegar todas as tags q tem a classe ".tecla" no documento fazendo assim uma lista.
-
-criamos um contador com o let que é um valor variavel, no nosso caso ele vai ser um contador.
-
-
-Após usamos o While para dar uma condição para nossa função ser ativada.
+ ela nos retorna uma lista de classes, então podemos numerar a .classlist[0] por ex: para acessar a primeira classe da lista.
+ 
+ */
