@@ -16,4 +16,11 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         tocaSom(idaudio);
     }
 
+
+    //Criando uma função para quando acionarmos uma tecla o teclado, ela fique vermelha. Porém ainda faltam ajustes pois nós estamos acrescentando uma classe ao nosso HTML, mas não estamos dizendo em qual momento ela deve ser retirada.
+    tecla.onkeydown = function () {
+        tecla.classList.add('ativa');
+    }
+    //onkeydown: Quando acionamos a telca com o teclado.
+    //ClassList.add('ativa'): estamos adiconando a classe 'ativa' no nosso HTML.
 }
